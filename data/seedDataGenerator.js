@@ -124,5 +124,5 @@ module.exports = {
   oneRandoInt: getOneRandomInt,
   randoDes: randomDescription,
   mappingFunc: mapping,
-  mapp: mapping(seedJson),
+  mapp: mapping(seedJson.mydata),
 };

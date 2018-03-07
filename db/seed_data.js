@@ -2,7 +2,7 @@ const data = require('../data/seedData');
 const mongoose = require('mongoose');
 const db = require('./database');
 
-mongoose.connect('mongodb://localhost/amazon');
+mongoose.connect('mongodb://nicola24:nicola24@ds259778.mlab.com:59778/nile-product-description');
 
 const seedDb = (arr) => {
   arr.map((x) => {
@@ -27,4 +27,4 @@ const seedDb = (arr) => {
   });
 };
 
-seedDb(data);
+seedDb(data.mydata);

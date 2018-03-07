@@ -8,7 +8,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
+    "build": "webpack -d --watch",
     "test": "jest",
     "start": "nodemon server/server.js",
     "seed-db": "node db/seed_data.js"

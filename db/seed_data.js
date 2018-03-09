@@ -2,7 +2,7 @@ const data = require('../data/seedData');
 const mongoose = require('mongoose');
 const db = require('./database');
 
-const dbPwd = process.env.dbpwd;
+const dbPwd = process.env.dbpwd; // AWS elasticbeanstalk environment properties
 
 mongoose.connect(`mongodb://nicola24:${dbPwd}@ds259778.mlab.com:59778/nile-product-description`);
 

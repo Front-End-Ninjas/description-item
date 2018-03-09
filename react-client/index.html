@@ -13,7 +13,10 @@
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="dist/bundle.js" type="text/javascript"></script>
   <script>
+
+  // return the querystring part of a URL - URL + /?id=x
   const itemNumber = window.location.search.slice(4) || 0;
+
     ReactDOM.render(
       React.createElement(IndexDesc, {id: itemNumber}, null),
       document.getElementById('description')

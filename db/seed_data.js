@@ -2,7 +2,9 @@ const data = require('../data/seedData');
 const mongoose = require('mongoose');
 const db = require('./database');
 
-mongoose.connect('mongodb://nicola24:nicola24@ds259778.mlab.com:59778/nile-product-description');
+const dbPwd = process.env.dbpwd;
+
+mongoose.connect(`mongodb://nicola24:${dbPwd}@ds259778.mlab.com:59778/nile-product-description`);
 
 const seedDb = (arr) => {
   arr.map((x) => {

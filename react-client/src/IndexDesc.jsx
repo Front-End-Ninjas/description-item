@@ -11,11 +11,13 @@ class IndexDesc extends React.Component {
   }
 
   componentDidMount() {
-    fetch(this.props.id, (dataReceived) => {
-      const dataReceivedArr = [];
-      dataReceivedArr.push(dataReceived);
-      this.setState({ data: dataReceivedArr });
-    });
+    fetch(this.props.id)
+      .then((response) => {
+        const responseDataArr = [];
+        responseDataArr.push(response.data);
+        this.setState({ data: responseDataArr });
+      })
+      .catch(error => console.log(error));
   }
 
   render() {

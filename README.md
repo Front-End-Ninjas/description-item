@@ -16,3 +16,6 @@
 
 ### Server
 - Server listening on port 3001
+
+![Alt text](https://i.imgur.com/fZlguc4.png "Nile Description Component")
+![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
